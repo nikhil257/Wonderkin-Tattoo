@@ -1,0 +1,116 @@
+@font-face {
+    font-family: mm;
+    src: url(/Fonts/l);
+}
+@font-face {
+    font-family: pp;
+    src: url(/Fonts/inter-v12-latin-regular.woff2);
+}
+:root{
+    --pre : rgb(232, 232, 232);
+    /* --sec : ; */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:4vh 7vh;
+}
+nav h1{
+    font-size: 8vh;
+    font-family: mm;
+    color: var(--pre);
+    font-weight: 100;
+    letter-spacing: -7px;
+}
+.middle-nav{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: var(--pre);
+    font-family: pp;
+    font-size: 1.8vh;
+}
+nav img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+nav button{
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: var(--pre);
+    background-color: transparent;
+    border: 2px solid var(--pre); 
+    font-family: pp;
+    cursor: pointer;
+}
+.page1{
+    width: 100%;
+    height: 82vh;
+    overflow: hidden;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+
+}
+.content h1{
+    font-size: 28vh;
+    font-family: mm;
+    font-weight: 200;
+    color: var(--pre);
+    position: absolute;
+    top:-7%;
+    z-index: 2;
+}
+.content #plant{
+    width: 79vw;
+    height: fit-content;
+}
+.content #bg{
+    width: 66vh;
+    height:70vh;
+    border-top-left-radius: 47%;
+    border-top-right-radius: 47%;
+    position: absolute;
+}
+.content #person{
+    width: 470px;
+    height:570px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+    transform: translateY(60px);
+    z-index: 4;
+}
+.page2{
+    width: 100%;
+    height: 100vh;
+}
